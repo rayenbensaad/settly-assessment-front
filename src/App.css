@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+label {
+  display: block;
+  margin-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+  background-color: rgb(202, 202, 255) !important;
+
+}
+.test2{
+  background-color: rgb(255, 255, 255) !important;
+
+}
+.card-container.card {
+  max-width: 450px !important;
+  padding: 40px 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+
+  display: grid;
+  background-color: #f7f7f7 !important;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+
+* {
+  outline: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-wrapper {
+  background-image: linear-gradient(to right top, #99cffe, #84bcf1, #70aae4, #5d98d6, #4986c9);
+  height: 100vh;
+}
+
+.form-wrapper {
+  margin: 0 auto 25px;
+
+  max-width: 450px !important;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 35px;
+  min-width: 35vw;
+  display: grid;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 2px solid dimgrey ;
+  background-color: #f6f6f6;
+  min-width: 27vw;
+  padding: 10px;
+  transition: 0.3s all ease-in-out !important;
+  margin-bottom: 25px;
+}
+
+.form-input:focus {
+  border-bottom: 2px solid rgb(167, 101, 101) ;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out !important;
+}
+
+.form-input:focus::placeholder {
+  transition: 0.3s all ease-in-out !important;
+}
+
+.form-button {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #5886c5;
+  border: none;
+  color: #f6f6f6;
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: 0.3s all ease-in-out !important;
+  min-width: 27vw;
+}
+
+.form-button:hover {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #a4cffb;
+  color: #000000;
+  transition: 0.3s all ease-in-out !important;
+}
+
+.error-input {
+  color: darkred;
+  font-weight: bold;
+  text-align: start !important;
 }
